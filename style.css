@@ -11,10 +11,17 @@ h1 {
     margin: auto
 }
 
+.images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
 .image1 {
     display: flex; 
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
   
     
 }
@@ -22,13 +29,14 @@ h1 {
 .image2 { 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .image3 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding-top: 25px;
 }
 
 .vis1-detail {
