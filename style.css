@@ -6,7 +6,10 @@ h1 {
     text-align: center;
 }
 
-
+.change-background {
+    text-align: center;
+    margin: auto
+}
 
 .image1 {
     display: flex; 
