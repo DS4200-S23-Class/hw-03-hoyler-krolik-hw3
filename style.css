@@ -20,13 +20,23 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-} 
+}
+
+.image3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 .vis1-detail {
     padding: 1%;
 }
 
 .vis2-detail {
+    padding: 1%;
+}
+
+.vis3-detail {
     padding: 1%;
 }
 
