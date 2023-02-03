@@ -1,158 +1,227 @@
 <!DOCTYPE html>
-<html> 
+<html>
 
+<!-- Title to webpage, make connection to css file -->
 <head>
     <meta charset=utf-8/>
     <link rel="stylesheet" href="style.css">
-    
+
     <title>hw-03</title>
 </head>
 
-
+<!-- Body of webpage -->
 <body>
-    <h1>hw-03: Interactive Webpage, and Marks & Channels</h1>
-    <div class = "change-background">
-        <button onclick="change_background()">Click to Change Background Color!</button>
-    </div>
-    
-    <div class = "images">
-        <div class="image1">
-            <div>
-                <img src="img/vis1.png" alt="vis1">
-            </div>
-            <div class = "vis1-detail">
+<!-- Add title to main header -->
+<h1>hw-03: Interactive Webpage, and Marks & Channels</h1>
+
+<!-- div that has button (change background) functionality -->
+<div class="change-background">
+    <button onclick="change_background()">Click to Change Background Color!</button>
+</div>
+
+<!-- div that houses all the image divs -->
+<div class="images">
+    <!-- div for image1 -->
+    <div class="image1">
+        <div>
+            <!-- add image1 -->
+            <img src="img/vis1.png" alt="vis1">
+        </div>
+        <!-- div that has all the mark, channel and colormap details for image1 -->
+        <div class="vis1-detail">
+            <!-- marks for image1 -->
             <h3>Marks</h3>
             <ul>
+                <!-- mark 1 -->
                 <li>Line: graphical element that represents the scale for “Electoral Votes Needed To Win”</li>
+                <!-- mark 2 -->
                 <li>Area: graphical element that represents the map of the United States</li>
             </ul>
+            <!-- channels for image1 -->
             <h3>Channels</h3>
             <ul>
+                <!-- channel 1 (mark 1) -->
                 <li>Color (Line)
                     <ul>
                         <li>represents a categorical attribute (presidential candidate)</li>
-                        <li>use of color to represent a particular presidential candidate was an effective choice, seeing as it allows an individual to make an immediate deduction about which candidate we are referring to (mapping categorical attribute to color channel)</li> 
+                        <li>use of color to represent a particular presidential candidate was an effective choice,
+                            seeing as it allows an individual to make an immediate deduction about which candidate we
+                            are referring to (mapping categorical attribute to color channel)
+                        </li>
                     </ul>
                 </li>
             </ul>
             <ul>
-                <li>Size (Line) 
+                <!-- channel 2 (mark 1) -->
+                <li>Size (Line)
                     <ul>
-                        <li>represents a quantitative (sequential, ordered attribute) attribute (electoral votes needed to win)</li>
-                        <li>the use of size to represent the number of electoral votes cast for each presidential candidate was an effective choice, seeing as it allows the individual to quantify and interpret the proportion of votes cast for each candidate</li> 
+                        <li>represents a quantitative (sequential, ordered attribute) attribute (electoral votes needed
+                            to win)
+                        </li>
+                        <li>the use of size to represent the number of electoral votes cast for each presidential
+                            candidate was an effective choice, seeing as it allows the individual to quantify and
+                            interpret the proportion of votes cast for each candidate
+                        </li>
                     </ul>
                 </li>
             </ul>
             <ul>
-                <li>Color (Area) 
+                <!-- channel 1 (mark 2) -->
+                <li>Color (Area)
                     <ul>
                         <li>represents a categorical attribute (presidential candidate)</li>
-                        <li>the use of color to represent who each state voted for was an effective choice, seeing as it allows an individual to make an immediate deduction about which candidate each state supports (mapping categorical attribute to color channel)</li> 
+                        <li>the use of color to represent who each state voted for was an effective choice, seeing as it
+                            allows an individual to make an immediate deduction about which candidate each state
+                            supports (mapping categorical attribute to color channel)
+                        </li>
                     </ul>
                 </li>
             </ul>
             <ul>
-                <li>Shape (Area) 
+                <!-- channel 2 (mark 2) -->
+                <li>Shape (Area)
                     <ul>
                         <li>represents categorical attribute (shape of each state)</li>
-                        <li>the use of shape to represent each state and ultimately make up the United State was effective as it displayed the geography of the country accurately</li> 
+                        <li>the use of shape to represent each state and ultimately make up the United State was
+                            effective as it displayed the geography of the country accurately
+                        </li>
                     </ul>
                 </li>
             </ul>
+            <!-- colormap for image1 -->
             <h3>Colormap</h3>
             <ul>
-                <li>Categorical colormap was used to represent each presidential candidate and their respective political party. </li>
-                <li>Again, it is being used to represent a categorical attribute (presidential candidate/political party) and is very effective seeing as the viewer immediately associates blue with Hillary Clinton (Democrats) and red with Donald Trump (Republicans).</li>
+                <li>Categorical colormap was used to represent each presidential candidate and their respective
+                    political party.
+                </li>
+                <li>Again, it is being used to represent a categorical attribute (presidential candidate/political
+                    party) and is very effective seeing as the viewer immediately associates blue with Hillary Clinton
+                    (Democrats) and red with Donald Trump (Republicans).
+                </li>
             </ul>
-            </div>
         </div>
-
-        <div class = "image2">
-            <div>
-                <img src="img/vis2.png" alt="vis2">
-            </div>
-
-            <div class="vis2-detail">
-                <h3>Marks</h3>
-                <ul>
-                    <li>Points: graphical element that represents the linear weight (scoring value) of batted balls</li>
-                </ul>
-
-                <h3>Channels</h3>
-                <ul>
-                    <li>Color
-                        <ul>
-                            <li>represents quantitative data (diverging, ordered attribute)</li>
-                            <li>the use of color to represent the scoring value of batted balls is effective, seeing as it allows the viewer to deduce if the particular data point is above or below the average as well as the magnitude (how strong the shade is)</li> 
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>Position (Horizontal and Vertical)
-                        <ul>
-                            <li>represents quantitative data (diverging, ordered attribute)</li>
-                            <li>the use of position (horizontal for exit velocity and vertical for launch angle) is effective, seeing as it allows the viewer to both interpret and estimate these values for a particular data point.</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h3>Colormap</h3>
-                <ul>
-                    <li>Divergent colormap used to represent the scoring value of batted balls (linear weight).</li>
-                    <li>Again, it is being used to represent quantitative (diverging) data. Essentially, it represents two extremes (above and below) surrounding the average scoring value and is very effective as the viewer immediately associates one color with either above or below average.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class = "image3">
-            <div>
-                <img src="img/drugs.png" alt="vis3">
-            </div>
-
-            <div class="vis3-detail">
-                <h3>Marks</h3>
-                <ul>
-                    <li>Lines: graphical element that represents the percentage of individuals in an age group that use a certain drug</li>
-                </ul>
-
-                <h3>Channels</h3>
-                <ul>
-                    <li>Color
-                        <ul>
-                            <li>represents a categorical attribute (type of drug)</li>
-                            <li>the use of color to represent a particular drug was an effective choice, seeing as it allows an individual to make an immediate deduction about which drug we are referring to</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>Position (Horizontal and Vertical)
-                        <ul>
-                            <li>both the horizontal and vertical channels represent ordered attributes (quantitative)</li>
-                            <li>the use of horizontal and vertical positions is effective, seeing as it allows the viewer to accurately identify the age and quantify the percentage values for the data</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h3>Colormap</h3>
-                <ul>
-                    <li>Categorical colormap used to represent the type of drug.</li>
-                    <li>Again, it is being used to represent quantitative (diverging) data. Again, it is being used to represent a categorical attribute (type of drug) and is very effective seeing as the viewer immediately associates blue with alcohol and orange with marijuana (as per the legend/key).</li>
-                </ul>
-            </div>
-        </div>
-
     </div>
-    <!-- Acknowledgements section for references used in our HTML webpage -->
-    <h2>Acknowledgements</h2>
-    <div>
-        <ul>
-        <li> <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Resource1</a></li>
+
+    <!-- div for image2 -->
+    <div class="image2">
+        <div>
+            <!-- add image2 -->
+            <img src="img/vis2.png" alt="vis2">
+        </div>
+
+        <!-- div that has all the mark, channel and colormap details for image2 -->
+        <div class="vis2-detail">
+            <!-- marks for image2 -->
+            <h3>Marks</h3>
+            <ul>
+                <li>Points: graphical element that represents the linear weight (scoring value) of batted balls</li>
+            </ul>
+
+            <!-- channels for image2 -->
+            <h3>Channels</h3>
+            <ul>
+                <!-- channel 1 -->
+                <li>Color
+                    <ul>
+                        <li>represents quantitative data (diverging, ordered attribute)</li>
+                        <li>the use of color to represent the scoring value of batted balls is effective, seeing as it
+                            allows the viewer to deduce if the particular data point is above or below the average as
+                            well as the magnitude (how strong the shade is)
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <!-- channel 2 -->
+                <li>Position (Horizontal and Vertical)
+                    <ul>
+                        <li>represents quantitative data (diverging, ordered attribute)</li>
+                        <li>the use of position (horizontal for exit velocity and vertical for launch angle) is
+                            effective, seeing as it allows the viewer to both interpret and estimate these values for a
+                            particular data point.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- colormap for image2 -->
+            <h3>Colormap</h3>
+            <ul>
+                <li>Divergent colormap used to represent the scoring value of batted balls (linear weight).</li>
+                <li>Again, it is being used to represent quantitative (diverging) data. Essentially, it represents two
+                    extremes (above and below) surrounding the average scoring value and is very effective as the viewer
+                    immediately associates one color with either above or below average.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- div that has image3 -->
+    <div class="image3">
+        <div>
+            <!-- add image3 -->
+            <img src="img/drugs.png" alt="vis3">
+        </div>
+
+        <!-- div that has mark, channel and colormap details of image 3 -->
+        <div class="vis3-detail">
+            <!-- marks image3 -->
+            <h3>Marks</h3>
+            <ul>
+                <li>Lines: graphical element that represents the percentage of individuals in an age group that use a
+                    certain drug
+                </li>
+            </ul>
+
+            <!-- channels image3 -->
+            <h3>Channels</h3>
+            <ul>
+                <!-- channel 1 -->
+                <li>Color
+                    <ul>
+                        <li>represents a categorical attribute (type of drug)</li>
+                        <li>the use of color to represent a particular drug was an effective choice, seeing as it allows
+                            an individual to make an immediate deduction about which drug we are referring to
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <!-- channel 2 -->
+                <li>Position (Horizontal and Vertical)
+                    <ul>
+                        <li>both the horizontal and vertical channels represent ordered attributes (quantitative)</li>
+                        <li>the use of horizontal and vertical positions is effective, seeing as it allows the viewer to
+                            accurately identify the age and quantify the percentage values for the data
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- colormap details of image3 -->
+            <h3>Colormap</h3>
+            <ul>
+                <li>Categorical colormap used to represent the type of drug.</li>
+                <li>Again, it is being used to represent quantitative (diverging) data. Again, it is being used to
+                    represent a categorical attribute (type of drug) and is very effective seeing as the viewer
+                    immediately associates blue with alcohol and orange with marijuana (as per the legend/key).
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<!-- Acknowledgements section for references used in our HTML webpage -->
+<h2>Acknowledgements</h2>
+<div>
+    <ul>
+        <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Resource1</a></li>
         <li><a href="https://www.w3schools.com/howto/howto_css_two_columns.asp">Resource2</a></li>
-        <li><a href="https://css-tricks.com/the-many-ways-to-change-an-svg-fill-on-hover-and-when-to-use-them/">Resource3</a></li>
-        </ul>
-    </div>
+        <li><a href="https://css-tricks.com/the-many-ways-to-change-an-svg-fill-on-hover-and-when-to-use-them/">Resource3</a>
+        </li>
+    </ul>
+</div>
 
 <script src="main.js"></script>
 </body>
