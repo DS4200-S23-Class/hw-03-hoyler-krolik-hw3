@@ -1,37 +1,41 @@
+/* Make webpage font Ariel*/
 * {
     font-family: Ariel;
 }
 
+/* Align header 1*/
 h1 {
     text-align: center;
 }
 
+/* Change background format */
 .change-background {
     text-align: center;
     margin: auto
 }
 
+/* Format images */
 .images {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
 }
 
+/* Format Image 1*/
 .image1 {
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly;
-  
-    
 }
 
+/* Format Image 2*/
 .image2 { 
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
+/* Format Image 3*/
 .image3 {
     display: flex;
     flex-direction: row;
@@ -39,14 +43,17 @@ h1 {
     padding-top: 25px;
 }
 
+/* Padding for Image 1*/
 .vis1-detail {
     padding: 1%;
 }
 
+/* Padding for Image 2*/
 .vis2-detail {
     padding: 1%;
 }
 
+/* Padding for Image 3*/
 .vis3-detail {
     padding: 1%;
 }
