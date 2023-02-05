@@ -36,68 +36,81 @@
                 <li>Line: graphical element that represents the scale for “Electoral Votes Needed To Win”</li>
                 <!-- mark 2 -->
                 <li>Area: graphical element that represents the map of the United States</li>
+                <!-- mark 2 -->
+                <li>Point: graphical element representing number of statwide and district votes and their political party*</li>
             </ul>
             <!-- channels for image1 -->
             <h3>Channels</h3>
+            
+            <!-- channel 1 (mark 1) -->
             <ul>
-                <!-- channel 1 (mark 1) -->
                 <li>Color (Line)
                     <ul>
-                        <li>represents a categorical attribute (presidential candidate)</li>
-                        <li>use of color to represent a particular presidential candidate was an effective choice,
-                            seeing as it allows an individual to make an immediate deduction about which candidate we
-                            are referring to (mapping categorical attribute to color channel)
-                        </li>
+                        <li>represents a categorical attribute (presidential candidate/political party)</li>
+                        <li>use of color to represent a particular presidential candidate/political party was an effective choice,
+                            seeing as it allows an individual to make an immediate deduction about which candidate/political party we
+                            are referring to (mapping categorical attribute to color channel)</li>
                     </ul>
                 </li>
             </ul>
+
+            <!-- channel 2 (mark 1) -->
             <ul>
-                <!-- channel 2 (mark 1) -->
-                <li>Size (Line)
+                <li>Size - Length (Line)
                     <ul>
                         <li>represents a quantitative (sequential, ordered attribute) attribute (electoral votes needed
                             to win)
                         </li>
                         <li>the use of size to represent the number of electoral votes cast for each presidential
                             candidate was an effective choice, seeing as it allows the individual to quantify and
-                            interpret the proportion of votes cast for each candidate
-                        </li>
+                            interpret the proportion of votes cast for each candidate</li>
                     </ul>
                 </li>
             </ul>
+
+            <!-- channel 1 (mark 2) -->
             <ul>
-                <!-- channel 1 (mark 2) -->
                 <li>Color (Area)
                     <ul>
-                        <li>represents a categorical attribute (presidential candidate)</li>
+                        <li>represents a categorical attribute (presidential candidate/political party)</li>
                         <li>the use of color to represent who each state voted for was an effective choice, seeing as it
-                            allows an individual to make an immediate deduction about which candidate each state
-                            supports (mapping categorical attribute to color channel)
-                        </li>
+                            allows an individual to make an immediate deduction about which candidate/political party each state
+                            supports (mapping categorical attribute to color channel)</li>
                     </ul>
                 </li>
             </ul>
+
+            <!-- channel 2 (mark 2) -->
             <ul>
-                <!-- channel 2 (mark 2) -->
                 <li>Shape (Area)
                     <ul>
                         <li>represents categorical attribute (shape of each state)</li>
                         <li>the use of shape to represent each state and ultimately make up the United State was
-                            effective as it displayed the geography of the country accurately
-                        </li>
+                            effective as it displayed the geography of the country accurately</li>
                     </ul>
                 </li>
             </ul>
+            <!-- channel 2 (mark 3) -->
+            <ul>
+                <li>Color (Point)
+                    <ul>
+                        <li>represents a categorical attribute (political party that each statewide/district electoral vote went to)</li>
+                        <li>the use of color to represent who each statewide/district voted for was an effective choice, seeing as it
+                            allows an individual to make an immediate deduction about which candidate/political party each statewide/district
+                            supports (mapping categorical attribute to color channel)</li>
+                            <li>*Given that Maine is not a swing state it was a poor choice to include it in this section of the visualization</li>
+                    </ul>
+                </li>
+            </ul>   
+
             <!-- colormap for image1 -->
             <h3>Colormap</h3>
             <ul>
                 <li>Categorical colormap was used to represent each presidential candidate and their respective
-                    political party.
-                </li>
+                    political party.</li>
                 <li>Again, it is being used to represent a categorical attribute (presidential candidate/political
                     party) and is very effective seeing as the viewer immediately associates blue with Hillary Clinton
-                    (Democrats) and red with Donald Trump (Republicans).
-                </li>
+                    (Democrats) and red with Donald Trump (Republicans).</li>
             </ul>
         </div>
     </div>
@@ -114,14 +127,16 @@
             <!-- marks for image2 -->
             <h3>Marks</h3>
             <ul>
-                <li>Points: graphical element that represents the linear weight (scoring value) of batted balls</li>
+                <li>Point: graphical element that represents the linear weight (scoring value) of batted balls</li>
+                <li>Area: graphical element that represents the region for the type of hit</li>
             </ul>
 
             <!-- channels for image2 -->
             <h3>Channels</h3>
+            
+            <!-- channel 1 -->
             <ul>
-                <!-- channel 1 -->
-                <li>Color
+                <li>Color (Point)
                     <ul>
                         <li>represents quantitative data (diverging, ordered attribute)</li>
                         <li>the use of color to represent the scoring value of batted balls is effective, seeing as it
@@ -132,9 +147,9 @@
                 </li>
             </ul>
 
+            <!-- channel 2 -->
             <ul>
-                <!-- channel 2 -->
-                <li>Position (Horizontal and Vertical)
+                <li>Position - Horizontal and Vertical (Point)
                     <ul>
                         <li>represents quantitative data (diverging, ordered attribute)</li>
                         <li>the use of position (horizontal for exit velocity and vertical for launch angle) is
@@ -144,6 +159,20 @@
                     </ul>
                 </li>
             </ul>
+
+            <!-- channel 3 -->
+            <ul>
+                <li>Position - Vertical (Area)
+                    <ul>
+                        <li>represents categorical data</li>
+                        <li>the use of position (vertical for launch angle) is effective, seeing as it allows the viewer to 
+                            interpret at what launch angle range does the category of the hit fall into
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+                
 
             <!-- colormap for image2 -->
             <h3>Colormap</h3>
@@ -191,7 +220,7 @@
                 <!-- channel 2 -->
                 <li>Position (Horizontal and Vertical)
                     <ul>
-                        <li>both the horizontal and vertical channels represent ordered attributes (quantitative)</li>
+                        <li>both the horizontal and vertical channels represent ordered attributes (quantitative, sequential)</li>
                         <li>the use of horizontal and vertical positions is effective, seeing as it allows the viewer to
                             accurately identify the age and quantify the percentage values for the data
                         </li>
@@ -203,8 +232,7 @@
             <h3>Colormap</h3>
             <ul>
                 <li>Categorical colormap used to represent the type of drug.</li>
-                <li>Again, it is being used to represent quantitative (diverging) data. Again, it is being used to
-                    represent a categorical attribute (type of drug) and is very effective seeing as the viewer
+                <li>Again, it is being used to represent a categorical attribute (type of drug) and is very effective seeing as the viewer
                     immediately associates blue with alcohol and orange with marijuana (as per the legend/key).
                 </li>
             </ul>
@@ -212,14 +240,15 @@
     </div>
 
 </div>
+
 <!-- Acknowledgements section for references used in our HTML webpage -->
 <h2>Acknowledgements</h2>
 <div>
     <ul>
         <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Resource1</a></li>
         <li><a href="https://www.w3schools.com/howto/howto_css_two_columns.asp">Resource2</a></li>
-        <li><a href="https://css-tricks.com/the-many-ways-to-change-an-svg-fill-on-hover-and-when-to-use-them/">Resource3</a>
-        </li>
+        <li><a href="https://css-tricks.com/the-many-ways-to-change-an-svg-fill-on-hover-and-when-to-use-them/">Resource3</a></li>
+        <li><a href="https://www.kaggle.com/datasets/tunguz/drug-use-by-age">Resource4</a></li>
     </ul>
 </div>
 

@@ -8,6 +8,11 @@ h1 {
     text-align: center;
 }
 
+/* Align header 2*/
+h2 {
+    text-align: center;
+}
+
 /* Change background format */
 .change-background {
     text-align: center;
@@ -55,6 +60,6 @@ h1 {
 
 /* Padding for Image 3*/
 .vis3-detail {
-    padding: 1%;
+    padding-top: 1%;
 }
 
